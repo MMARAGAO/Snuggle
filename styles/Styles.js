@@ -1,0 +1,96 @@
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  map: {
+    ...StyleSheet.absoluteFillObject,
+  },
+  appBar: {
+    backgroundColor: "transparent",
+    elevation: 0,
+  },
+  searchBar: {
+    flexDirection: "row",
+    alignItems: "center",
+    marginHorizontal: 16,
+    backgroundColor: "rgba(255, 255, 255, 0.7)",
+    borderRadius: Dimensions.get("window").width / 2,
+    paddingHorizontal: 12,
+  },
+  input: {
+    flex: 1,
+    paddingVertical: 8,
+  },
+  searchButton: {
+    padding: 8,
+    marginLeft: 8,
+    backgroundColor: "rgba(0, 0, 0, 0.1)",
+    borderRadius: Dimensions.get("window").width / 2,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  myLocationButton: {
+    position: "absolute",
+    bottom: 100,
+    right: 16,
+    backgroundColor: "rgba(0, 100, 255, 0.7)",
+    borderRadius: 24,
+    padding: 8,
+  },
+  routeButton: {
+    position: "absolute",
+    bottom: 150,
+    right: 16,
+    backgroundColor: "rgba(0, 100, 255, 0.7)",
+    borderRadius: 24,
+    padding: 8,
+  },
+  donateButton: {
+    position: "absolute",
+    bottom: 200,
+    right: 16,
+    backgroundColor: "rgba(255, 0, 0, 0.7)",
+    borderRadius: 24,
+    padding: 8,
+  },
+  loadingContainer: {
+    position: "absolute",
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "rgba(255, 255, 255, 0.7)",
+    zIndex: 2,
+  },
+  notFoundContainer: {
+    position: "absolute",
+    top: 100,
+    left: 16,
+    right: 16,
+    backgroundColor: "rgba(255, 0, 0, 0.7)",
+    borderRadius: 8,
+    padding: 8,
+    justifyContent: "center",
+    alignItems: "center",
+    zIndex: 2,
+  },
+  notFoundText: {
+    color: "white",
+    fontWeight: "bold",
+  },
+  calloutContainer: {
+    width: 200,
+    padding: 10,
+    backgroundColor: "white",
+    borderRadius: 5,
+  },
+  calloutTitle: {
+    fontWeight: "bold",
+    marginBottom: 5,
+  },
+  calloutDescription: {},
+});
+
+export default styles;
